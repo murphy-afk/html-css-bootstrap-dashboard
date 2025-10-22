@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
@@ -41,12 +44,59 @@
       </div>
     </nav>
   </header>
+  <main>
 
-
-
-
-
-
+    <form action="" class="container">
+      <div class="title py-3">
+        <h2>Nuovo libro</h2>
+      </div>
+      <div class="row row-cols-2 py-2">
+        <div class="col">
+          <label for="author-name" class="form-label">Nome Autore</label>
+          <input id="author-name" type="text" class="form-control" placeholder="Inserisci il nome dell'autore">
+        </div>
+        <div class="col">
+          <label for="author-last-name" class="form-label">Cognome Autore</label>
+          <input id="author-last-name" type="text" class="form-control" placeholder="Inserisci il cognome dell'autore">
+        </div>
+      </div>
+      <div class="py-2">
+        <label for="title" class="form-label">Titolo</label>
+        <input id="title" type="text" class="form-control" placeholder="Inserisci il titolo del libro">
+      </div>
+      <div class="row pb-3">
+        <div class="py-2 col-lg-4">
+          <label for="genre" class="form-label">Genere</label>
+          <select name="" id="genre" class="form-select" placeholder="Scegli il genere">
+            <option selected>Scegli il genere</option>
+            <option value="1">Horror</option>
+            <option value="2">Giallo</option>
+            <option value="3">Rosa</option>
+            <option value="4">Fantasy</option>
+          </select>
+        </div>
+        <div class="py-2 col-lg-4">
+          <label for="year" class="form-label">Anno di pubblicazione</label>
+          <input type="number" name="" id="year" class="form-control" placeholder="Inserisci l'anno">
+        </div>
+        <div class="py-2 col-lg-4">
+          <label for="isbn" class="form-label">ISBN#</label>
+          <input type="number" name="" id="isbn" class="form-control">
+        </div>
+      </div>
+      <div class="py-2 border-top border-light-subtle">
+        <label for="notes" class="form-label">Note</label>
+        <textarea name="" id="Notes" class="form-control" placeholder="Inserisci eventuali note sul libro"></textarea>
+      </div>
+      <div class="form-check py-2">
+        <input class="form-check-input" type="checkbox" value="" id="available-in-digital">
+        <label class="form-check-label" for="available-in-digital">
+          Disponibile anche in digitale
+        </label>
+      </div>
+      <button class="btn btn-primary py-2" type="submit">Aggiungi Libro</button>
+    </form>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
