@@ -1,3 +1,8 @@
 .nb-img-size {
   width: 80px;
 }
+
+.nb-position {
+  position: relative;
+  top: 100px;
+}

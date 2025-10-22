@@ -14,39 +14,37 @@
 </head>
 
 <body>
-  <header>
-    <nav class="bg-dark">
-      <div class="navbar">
-        <div class="nav-left d-flex align-items-center">
-          <a class="navbar-brand" href="#">
-            <img src="./img/duck.png" alt="Duck" class="nb-img-size">
-          </a>
-          <ul class="nav d-none d-lg-flex">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#">Catalogo libri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Anagrafica clienti</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Storico prestiti</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary">Help</a>
-            </li>
-          </ul>
-        </div>
-        <div class="nav-right">
-          <a href="#" class="btn btn-outline-light fs-2 d-lg-none">
-            <i class="fa-solid fa-bars"></i>
-          </a>
-        </div>
+  <header class="fixed-top">
+    <nav class="bg-dark navbar navbar-expand-lg">
+      <div class="nav-left d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="./img/duck.png" alt="Duck" class="nb-img-size">
+        </a>
+        <ul class="nav d-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Catalogo libri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Anagrafica clienti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Storico prestiti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary">Help</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="btn btn-outline-light fs-2 d-lg-none">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </div>
     </nav>
   </header>
   <main>
 
-    <form action="" class="container">
+    <form action="submit" class="container py-3 nb-position">
       <div class="title py-3">
         <h2>Nuovo libro</h2>
       </div>
@@ -67,7 +65,7 @@
       <div class="row pb-3">
         <div class="py-2 col-lg-4">
           <label for="genre" class="form-label">Genere</label>
-          <select name="" id="genre" class="form-select" placeholder="Scegli il genere">
+          <select name="genre" id="genre" class="form-select">
             <option selected>Scegli il genere</option>
             <option value="1">Horror</option>
             <option value="2">Giallo</option>
@@ -77,16 +75,17 @@
         </div>
         <div class="py-2 col-lg-4">
           <label for="year" class="form-label">Anno di pubblicazione</label>
-          <input type="number" name="" id="year" class="form-control" placeholder="Inserisci l'anno">
+          <input type="number" name="year" id="year" class="form-control" placeholder="Inserisci l'anno">
         </div>
         <div class="py-2 col-lg-4">
           <label for="isbn" class="form-label">ISBN#</label>
-          <input type="number" name="" id="isbn" class="form-control">
+          <input type="number" name="isbn" id="isbn" class="form-control">
         </div>
       </div>
       <div class="py-2 border-top border-light-subtle">
         <label for="notes" class="form-label">Note</label>
-        <textarea name="" id="Notes" class="form-control" placeholder="Inserisci eventuali note sul libro"></textarea>
+        <textarea name="notes" id="notes" class="form-control"
+          placeholder="Inserisci eventuali note sul libro"></textarea>
       </div>
       <div class="form-check py-2">
         <input class="form-check-input" type="checkbox" value="" id="available-in-digital">
